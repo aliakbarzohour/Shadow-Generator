@@ -9,4 +9,69 @@
 
 body {
     background: rgb(202, 40, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(94, 0, 0, 0.815);
+}
+
+.result {
+    border-radius: 20px;
+    border: 2px solid #00000078;
+    padding: 100px 0;
+    margin: 15px 0;
+}
+
+#element {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background-color: rgb(202, 40, 0);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.sliders {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 20px 15px;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.code-wrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    gap: 5;
+}
+
+textarea {
+    resize: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+#liveToastBtn {
+    background-color: rgb(202, 40, 0) !important;
+    border-radius: 10px !important;
+    border: none !important;
+    margin: 5px;
+    color: white !important;
 }

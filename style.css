@@ -13,14 +13,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    flex-direction: column;
+}
+
+.titles {
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 100px 0 100px;
+    text-align: center;
 }
 
 .container {
     background: #ffffff;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 20px 30px rgba(94, 0, 0, 0.815);
+    box-shadow: 0 20px 30px rgba(31, 0, 0, 0.815);
+    margin: 30px 50px 100px 50px;
 }
 
 .result {
@@ -77,4 +88,13 @@ textarea {
     border: none !important;
     margin: 5px;
     color: white !important;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a h3 {
+    margin: 50px 0;
 }

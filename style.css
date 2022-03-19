@@ -1,1 +1,12 @@
 /* Start Styling Shadow Generator App */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body {
+    background: rgb(202, 40, 0);
+}

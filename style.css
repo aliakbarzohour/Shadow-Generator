@@ -8,10 +8,12 @@
 }
 
 body {
-    background: rgb(202, 40, 0);
+    /* background: rgb(202, 40, 0); */
+    background: url(./media/background.jpg) center fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .container {
@@ -29,10 +31,11 @@ body {
 }
 
 #element {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     position: relative;
-    background-color: rgb(202, 40, 0);
+    background: url(./media/background.jpg) no-repeat;
+    /* background-color: rgb(202, 40, 0); */
     margin: auto;
     border-radius: 10px;
 }
@@ -69,7 +72,7 @@ textarea {
 }
 
 #liveToastBtn {
-    background-color: rgb(202, 40, 0) !important;
+    background: linear-gradient(#240755, #ca296b) !important;
     border-radius: 10px !important;
     border: none !important;
     margin: 5px;

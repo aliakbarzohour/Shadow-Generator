@@ -58,15 +58,15 @@
             <!-- Shadow inset/outset -->
             <div class="input-wrapper">
                 <label for="shadow-inset">Shadow Inset : </label>
-                <input type="checkbox" id="shadow-inet" />
+                <input type="checkbox" id="shadow-inset" />
             </div>
             <!-- Code Wrapper -->
             <div class="code-wrapper">
                 <!-- Shadow generated Code -->
-                <textarea rows="2"></textarea>
+                <textarea rows="2" id="code"></textarea>
                 <!-- ============================================================================ -->
                 <!-- Bootstrap Notification -->
-                <button type="button" class="btn btn-danger" id="liveToastBtn">Copy</button>
+                <button type="button" class="btn btn-danger" id="liveToastBtn" onclick="copyCode()">Copy</button>
                 <!-- Notification -->
                 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">

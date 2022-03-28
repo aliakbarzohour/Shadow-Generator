@@ -8,8 +8,8 @@
 }
 
 body {
-    /* background: rgb(202, 40, 0); */
-    background: url(./media/background.jpg) center fixed;
+    background: blue;
+    /* background: url(./media/background.jpg) center fixed; */ 
     display: flex;
     align-items: center;
     justify-content: center;

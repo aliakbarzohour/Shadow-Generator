@@ -8,7 +8,7 @@
 }
 
 body {
-    background: rgba(37,141,193,1);
+    background: rgba(14,86,154,1);
     /* background: url(./media/background.jpg) center fixed; */ 
     display: flex;
     align-items: center;
@@ -45,8 +45,9 @@ body {
     width: 80px;
     height: 80px;
     position: relative;
-    background: url(./media/background.jpg) no-repeat;
-    /* background-color: rgb(202, 40, 0); */
+/*     background: url(./media/background.jpg) no-repeat; */
+    
+    background-color: rgba(14,86,154,1);
     margin: auto;
     border-radius: 10px;
 }

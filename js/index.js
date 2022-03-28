@@ -73,8 +73,8 @@ function animate(element, className) {
         element.classList.remove(className);
         setTimeout(() => {
             animate(element, className);
-        }, 500);
-    }, 1500);
+        }, 400);
+    }, 900);
 }
 
 // Execution

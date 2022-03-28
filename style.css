@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+
 /* Start Styling Shadow Generator App */
 
 * {
@@ -8,8 +10,7 @@
 }
 
 body {
-    background: rgba(14,86,154,1);
-    /* background: url(./media/background.jpg) center fixed; */ 
+    background: rgb(44 14 154);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,9 +46,7 @@ body {
     width: 80px;
     height: 80px;
     position: relative;
-/*     background: url(./media/background.jpg) no-repeat; */
-    
-    background-color: rgba(14,86,154,1);
+    background: rgb(44 14 154);
     margin: auto;
     border-radius: 10px;
 }
@@ -84,11 +83,17 @@ textarea {
 }
 
 #liveToastBtn {
-    background: linear-gradient(#240755, #ca296b) !important;
+    background: linear-gradient(#240755, rgb(44 14 154)) !important;
     border-radius: 10px !important;
     border: none !important;
     margin: 5px;
     color: white !important;
+    transition: .7s;
+}
+
+#liveToastBtn:hover {
+    background: linear-gradient( rgb(44 14 154), #240755) !important;
+    transition: .7s;
 }
 
 .footer a {
@@ -99,3 +104,150 @@ textarea {
 .footer a h3 {
     margin: 50px 0;
 }
+
+.loaded {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+
+/* =============================================================== */
+
+
+/* Loading page */
+
+.loading_page {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2px;
+    background: rgb(44 14 154);
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    overflow: hidden;
+    inset: 0;
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: "Open Sans", -apple-system, "Segoe UI", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+
+.dots {
+    display: inline-flex;
+}
+
+.dots--animate .dot.z {
+    -webkit-animation: scale 0.8s 0.2s forwards;
+    animation: scale 0.8s 0.2s forwards;
+}
+
+.dots--animate .dot.f,
+.dots--animate .dot.s {
+    -webkit-animation: right 0.5s forwards;
+    animation: right 0.5s forwards;
+}
+
+.dots--animate .dot.l {
+    -webkit-animation: rightDown 0.4s 0.1s forwards linear, drop 2s 0.4s forwards linear;
+    animation: rightDown 0.4s 0.1s forwards linear, drop 2s 0.4s forwards linear;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: whitesmoke;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 6px;
+}
+
+.dot.z {
+    position: absolute;
+    transform: scale(0);
+}
+
+@-webkit-keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}
+
+.dot.f,
+.dot.s {
+    transform: translateX(0px);
+}
+
+@-webkit-keyframes right {
+    100% {
+        transform: translateX(16px);
+    }
+}
+
+@keyframes right {
+    100% {
+        transform: translateX(16px);
+    }
+}
+
+.dot.t {
+    background: transparent;
+}
+
+.dot .l {
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@-webkit-keyframes rightDown {
+    50% {
+        top: 4px;
+        left: 16px;
+    }
+    100% {
+        top: 12px;
+        left: 24px;
+    }
+}
+
+@keyframes rightDown {
+    50% {
+        top: 4px;
+        left: 16px;
+    }
+    100% {
+        top: 12px;
+        left: 24px;
+    }
+}
+
+@-webkit-keyframes drop {
+    100% {
+        transform: translate(70px, calc(35px + (100vh/2)));
+    }
+}
+
+@keyframes drop {
+    100% {
+        transform: translate(70px, calc(35px + (100vh/2)));
+    }
+}
+
+
+/* =============================================================== */
